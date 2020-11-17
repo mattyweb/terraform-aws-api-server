@@ -1,4 +1,4 @@
-# 311 Data Terraform
+# 311 Data Terraform Blueprint
 
 This Terraform blueprint manages the infrastructure needed to run the 311 Data API project in AWS.
 
@@ -43,9 +43,7 @@ For example, the value from ```/dev/us-east-1/DB_DSN``` will be injected as the 
 
 ## After the Deployment
 
-The environment will be created with a blank database. As a result the application will initially show an error message.
-
-The initial Alembic migration needs to be run then the database populated using the Prefect data pipeline.
+The environment will be created with a blank database. As a result the application will initially show an error message. The initial Alembic migration needs to be run then the database populated using the Prefect data pipeline.
 
 The easiest way to do this is with a SSH tunnel to the database using the Bastion server.
 
